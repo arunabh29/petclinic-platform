@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/petclinic-safety.cjs pre",
+        "timeoutSec": 10
+      }
+    ],
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "node .github/hooks/petclinic-safety.cjs post",
+        "timeoutSec": 10
+      }
+    ]
+  }
+}
